@@ -1,4 +1,4 @@
-var latenize = require('../lib/latenize.js');
+var latenize = require('../index.js');
 
 /*
   ======== A Handy Little Nodeunit Reference ========
@@ -20,15 +20,18 @@ var latenize = require('../lib/latenize.js');
     test.ifError(value)
 */
 
-exports['awesome'] = {
+exports['Latenize'] = {
   setUp: function(done) {
     // setup here
     done();
   },
-  'no args': function(test) {
-    test.expect(1);
-    // tests here
-    test.equal(latenize.awesome(), 'awesome', 'should be awesome.');
-    test.done();
+  'latenize': function(t) {
+    t.expect(5);
+    t.equal(latenize("Piqué"), "Pique");
+    t.equal(latenize("Solución"), "Solucion");
+    t.equal(latenize.isLatin("Piqué"), false);
+    t.equal(latenize.isLatin("Pique"), true);
+    t.equal(latenize.isLatin(latenize("Piqué")), true);
+    t.done();
   }
 };

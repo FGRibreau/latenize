@@ -1,27 +1,23 @@
-# latenize
+# Latenize
 
-ES
+NPM/NodeJS port of Semplice latenize
 
 ## Getting Started
 Install the module with: `npm install latenize`
 
 ```javascript
 var latenize = require('latenize');
-latenize.awesome(); // "awesome"
+latinize("Piqué") // => "Pique"
+latinize("Solución") // => "Solution"
+latinize.isLatin("Piqué")  // => false
+latinize.isLatin("Pique")  // => true
+latinize.isLatin(latinize("Piqué"))  // => true
 ```
-
-## Documentation
-_(Coming soon)_
-
-## Examples
-_(Coming soon)_
 
 ## Contributing
 In lieu of a formal styleguide, take care to maintain the existing coding style. Add unit tests for any new or changed functionality. Lint and test your code using [grunt](https://github.com/cowboy/grunt).
 
-## Release History
-_(Nothing yet)_
-
 ## License
-Copyright (c) 2013 Francois-Guillaume Ribreau  
+[Semplice](http://semplicewebsites.com/removing-accents-javascript)
+Copyright (c) 2013 Francois-Guillaume Ribreau
 Licensed under the MIT license.

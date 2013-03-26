@@ -1,12 +1,9 @@
 {
   "name": "latenize",
-  "description": "ES",
+  "description": "Npm/NodeJS port of Semplice latinise/latenize",
   "version": "0.1.0",
   "homepage": "https://github.com/FGRibreau/latenize",
-  "author": {
-    "name": "Francois-Guillaume Ribreau",
-    "email": "github@fgribreau.com"
-  },
+  "author": "Francois-Guillaume Ribreau <npm@fgribreau.com> (http://fgribreau.com)",
   "repository": {
     "type": "git",
     "url": "git://github.com/FGRibreau/latenize.git"
@@ -20,7 +17,7 @@
       "url": "https://github.com/FGRibreau/latenize/blob/master/LICENSE-MIT"
     }
   ],
-  "main": "lib/latenize",
+  "main": "index.js",
   "engines": {
     "node": ">= 0.6.0"
   },
@@ -30,5 +27,5 @@
   "devDependencies": {
     "grunt": "~0.3.15"
   },
-  "keywords": []
+  "keywords": ["string", "latin"]
 }
