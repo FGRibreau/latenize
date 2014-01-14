@@ -26,8 +26,9 @@ exports['Latenize'] = {
     done();
   },
   'latenize': function(t) {
-    t.expect(5);
+    t.expect(6);
     t.equal(latenize("Piqué"), "Pique");
+    t.equal(latenize("Артём Риженков"), "Artyom Rizhenkov");
     t.equal(latenize("Solución"), "Solucion");
     t.equal(latenize.isLatin("Piqué"), false);
     t.equal(latenize.isLatin("Pique"), true);
