@@ -1,4 +1,4 @@
-# Latenize [![Gittip](http://badgr.co/gittip/fgribreau.png)](https://www.gittip.com/fgribreau/)
+# Latenize
 
 NPM/NodeJS port of Semplice latenize
 
