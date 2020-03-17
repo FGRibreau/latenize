@@ -23,7 +23,7 @@
         "test": "grunt test"
     },
     "devDependencies": {
-        "grunt": "~0.3.15"
+        "grunt": "~1.1.0"
     },
     "keywords": ["string", "latin"]
 }
